@@ -38,7 +38,7 @@ namespace TaskExample
             // dodaje token do anulowania zadania
             CancellationTokenSource cts = new CancellationTokenSource();
             CancellationToken token = cts.Token;
-            cts.CancelAfter(3000);
+            cts.CancelAfter(3000); // zmiana czasu
             Task taskCancel = Task.Run(() =>
             {
                 try
