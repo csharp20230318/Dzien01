@@ -37,7 +37,7 @@ namespace TaskExample
 
             CancellationTokenSource cts = new CancellationTokenSource();
             CancellationToken token = cts.Token;
-            cts.CancelAfter(1000);
+            cts.CancelAfter(3000);
             Task taskCancel = Task.Run(() =>
             {
                 try
